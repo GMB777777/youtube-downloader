@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <title>YouTube Downloader</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Downloader</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4c6ef5, #15aabf);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    a.download-btn {
+      background-color: #ffd43b;
+      color: #222;
+      font-weight: 700;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(255, 212, 59, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    a.download-btn:hover,
+    a.download-btn:focus {
+      background-color: #ffec99;
+      box-shadow: 0 8px 25px rgba(255, 236, 153, 0.6);
+    }
+    footer {
+      position: fixed;
+      bottom: 15px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
-    <h1>YouTube Downloader</h1>
-    <p><a href="YoutubeDownloader.exe" download>Downloader herunterladen</a></p>
+  <h1>YouTube Downloader</h1>
+  <p>Klicke unten, um den Downloader herunterzuladen</p>
+  <a class="download-btn" href="downloader.exe" download>Jetzt herunterladen</a>
+  <footer>© 2025 GMB7</footer>
 </body>
 </html>
